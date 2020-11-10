@@ -1,0 +1,21 @@
+<https://uah.es/ont/bfiao.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://uah.es/ont/bfiao.owl> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/bfo.owl> .
+<https://uah.es/ont/bfiao.owl#Domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://uah.es/ont/bfiao.owl#Domain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://uah.es/ont/bfiao.owl#Node> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://uah.es/ont/bfiao.owl#Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://uah.es/ont/bfiao.owl#Connection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://uah.es/ont/bfiao.owl#Connection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://uah.es/ont/bfiao.owl#has_domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://uah.es/ont/bfiao.owl#has_domain> <http://www.w3.org/2000/01/rdf-schema#domain> <https://uah.es/ont/bfiao.owl#Node> .
+<https://uah.es/ont/bfiao.owl#has_domain> <http://www.w3.org/2000/01/rdf-schema#range> <https://uah.es/ont/bfiao.owl#Domain> .
+<https://uah.es/ont/bfiao.owl#has_connection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://uah.es/ont/bfiao.owl#has_connection> <http://www.w3.org/2000/01/rdf-schema#domain> <https://uah.es/ont/bfiao.owl#Node> .
+<https://uah.es/ont/bfiao.owl#has_connection> <http://www.w3.org/2000/01/rdf-schema#range> <https://uah.es/ont/bfiao.owl#Connection> .
+<https://uah.es/ont/bfiao.owl#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://uah.es/ont/bfiao.owl#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://uah.es/ont/bfiao.owl#Trajectory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://uah.es/ont/bfiao.owl#Trajectory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://uah.es/ont/bfiao.owl#Domain> <http://www.w3.org/2000/01/rdf-schema#comment> "A conceptual space related to some infrastructure."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://uah.es/ont/bfiao.owl#Node> <http://www.w3.org/2000/01/rdf-schema#comment> "A geospatial entity of interest for an unfolding situation."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://uah.es/ont/bfiao.owl#Connection> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between two nodes that entail some cascading effect in unfolding situations."^^<http://www.w3.org/2001/XMLSchema#string> .
