@@ -1,5 +1,6 @@
 <https://uah.es/ont/bfiao.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://uah.es/ont/bfiao.owl> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/bfo.owl> .
+<https://uah.es/ont/bfiao.owl> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2006/time> .
 <https://uah.es/ont/bfiao.owl#Domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://uah.es/ont/bfiao.owl#Domain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <https://uah.es/ont/bfiao.owl#Node> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -9,13 +10,35 @@
 <https://uah.es/ont/bfiao.owl#has_domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://uah.es/ont/bfiao.owl#has_domain> <http://www.w3.org/2000/01/rdf-schema#domain> <https://uah.es/ont/bfiao.owl#Node> .
 <https://uah.es/ont/bfiao.owl#has_domain> <http://www.w3.org/2000/01/rdf-schema#range> <https://uah.es/ont/bfiao.owl#Domain> .
+<https://uah.es/ont/bfiao.owl#has_relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://uah.es/ont/bfiao.owl#has_relation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://uah.es/ont/bfiao.owl#Node> .
+<https://uah.es/ont/bfiao.owl#has_relation> <http://www.w3.org/2000/01/rdf-schema#range> <https://uah.es/ont/bfiao.owl#Connection> .
+<https://uah.es/ont/bfiao.owl#has_physical_connection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://uah.es/ont/bfiao.owl#has_physical_connection> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://uah.es/ont/bfiao.owl#has_relation> .
+<https://uah.es/ont/bfiao.owl#has_physical_connection> <http://www.w3.org/2000/01/rdf-schema#domain> <https://uah.es/ont/bfiao.owl#Node> .
+<https://uah.es/ont/bfiao.owl#has_physical_connection> <http://www.w3.org/2000/01/rdf-schema#range> <https://uah.es/ont/bfiao.owl#Connection> .
+<https://uah.es/ont/bfiao.owl#has_geolocated_relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://uah.es/ont/bfiao.owl#has_geolocated_relation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://uah.es/ont/bfiao.owl#has_relation> .
 <https://uah.es/ont/bfiao.owl#has_connection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://uah.es/ont/bfiao.owl#has_connection> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://uah.es/ont/bfiao.owl#has_relation> .
 <https://uah.es/ont/bfiao.owl#has_connection> <http://www.w3.org/2000/01/rdf-schema#domain> <https://uah.es/ont/bfiao.owl#Node> .
 <https://uah.es/ont/bfiao.owl#has_connection> <http://www.w3.org/2000/01/rdf-schema#range> <https://uah.es/ont/bfiao.owl#Connection> .
 <https://uah.es/ont/bfiao.owl#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://uah.es/ont/bfiao.owl#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://uah.es/ont/bfiao.owl#Trajectory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://uah.es/ont/bfiao.owl#Trajectory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://uah.es/ont/bfiao.owl#PossibleEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://uah.es/ont/bfiao.owl#PossibleEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://uah.es/ont/bfiao.owl#realized_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://uah.es/ont/bfiao.owl#realized_in> <http://www.w3.org/2000/01/rdf-schema#domain> <https://uah.es/ont/bfiao.owl#PossibleEvent> .
+<https://uah.es/ont/bfiao.owl#realized_in> <http://www.w3.org/2000/01/rdf-schema#range> <https://uah.es/ont/bfiao.owl#Event> .
+<https://uah.es/ont/bfiao.owl#Relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://uah.es/ont/bfiao.owl#Relation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <https://uah.es/ont/bfiao.owl#Domain> <http://www.w3.org/2000/01/rdf-schema#comment> "A conceptual space related to some infrastructure."^^<http://www.w3.org/2001/XMLSchema#string> .
 <https://uah.es/ont/bfiao.owl#Node> <http://www.w3.org/2000/01/rdf-schema#comment> "A geospatial entity of interest for an unfolding situation."^^<http://www.w3.org/2001/XMLSchema#string> .
 <https://uah.es/ont/bfiao.owl#Connection> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between two nodes that entail some cascading effect in unfolding situations."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://uah.es/ont/bfiao.owl#has_relation> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates nodes with connections"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://uah.es/ont/bfiao.owl#has_physical_connection> <http://www.w3.org/2000/01/rdf-schema#comment> "A kind of relation that entails a physical connection that may be affected or broken in an unfolding emergency situation."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://uah.es/ont/bfiao.owl#has_connection> <http://www.w3.org/2000/01/rdf-schema#comment> "[TODO]"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://uah.es/ont/bfiao.owl#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "A spatiotemporal ocurrence that is relevant to a situation and may affect nodes and/or some of their relations."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://uah.es/ont/bfiao.owl#PossibleEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An hypothesis of an event that may ocurr given a state of the situation."^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://uah.es/ont/bfiao.owl#realized_in> <http://www.w3.org/2000/01/rdf-schema#comment> "The realization of an hypothesised event in an actual event. "^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://uah.es/ont/bfiao.owl#Relation> <http://www.w3.org/2000/01/rdf-schema#comment> "Relations between nodes that may propagate effects in an unfolding emergency situation."^^<http://www.w3.org/2001/XMLSchema#string> .
