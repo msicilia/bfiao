@@ -10,6 +10,7 @@ class Partner(Thing):
     namespace = bcollab  
     comment = "An organization collaborating in the prevention, mitigation or recovery from an emergency situation."
 
+# Nodes are defined by Partners or Persons working for partners. 
 
 class Plan(Thing):
     namespace = bcollab  

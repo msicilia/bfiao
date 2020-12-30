@@ -14,19 +14,36 @@ bfiao
         :alt: Documentation Status
 
 
+The Basic Formal Infrastructure Assessment Ontology (BFiaO) is an ontology aimed at representing interoperable 
+accounts of emergency management situations. As such, it is application type-specific (but not application-specific
+since it is not created for a single concrete application).
 
+The ecollab ontology is a companion ontology that uses the BFiaO and represents the organizations collaborating 
+in an unfolding emergency situation. 
 
-Basic Formal Infrastructure Ontology
+This package creates these ontologies programmatically using the owlready2 library and provides utilities for
+their use.
 
 
 * Free software: MIT license
 * Documentation: https://bfiao.readthedocs.io.
 
-
 Features
 --------
 
-* TODO
+* Uses the the `Basic Format Ontology (BFO) <https://basic-formal-ontology.org//>`_ and the `Common Core Ontologies (CCO) <https://github.com/CommonCoreOntology/CommonCoreOntologies>`_.
+* Two layer modeling: geospatial regions or sites of interest separated from material objects, and implicitly tied by spatial locations.
+
+
+Documentation
+--------------
+
+The following pages describe the main elements  of the `bfiao` ontology.
+
+* Nodes and infrastructures.
+* Events of interest.
+* Projections of potential future events. 
+
 
 Credits
 -------

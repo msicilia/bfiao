@@ -1,10 +1,9 @@
 from bfiao import *
-from ecollab import *
+# from ecollab import *
 
 
-print(list(bfiao.classes()))
-# print(list(bfo.classes()))
+#print(list(bfiao.classes()))
+#print(list(cco.classes()))
 
 
-
-bfiao.save("bfiao.nt", "ntriples")
+bfiao.save("bfiao", "ntriples")
